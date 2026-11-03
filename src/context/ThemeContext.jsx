@@ -1,18 +1,19 @@
 import { createContext, useState } from 'react';
 
-// Exporta o contexto junto ao provedor para uso nas páginas do laboratório.
+// Cria o contexto; o valor será disponibilizado pelo Provider.
 // eslint-disable-next-line react-refresh/only-export-components
 export const ThemeContext = createContext(null);
 
 export function ThemeProvider({ children }) {
+  // O estado está acima das páginas da aplicação.
   const [tema, setTema] = useState('claro');
 
   function alternarTema() {
-    setTema((atual) => (atual === 'claro' ? 'escuro' : 'claro'));
+    setTema(anterior => anterior === 'claro' ? 'escuro' : 'claro');
   }
 
   return (
-    <ThemeContext.Provider value={{ tema, setTema, alternarTema }}>
+    <ThemeContext.Provider value={{ tema, alternarTema }}>
       {children}
     </ThemeContext.Provider>
   );
