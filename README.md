@@ -8,7 +8,7 @@ Uma aplicação de página única que conecta estado, efeitos, lógica reutiliz�
 
 **React 19 · React Router 7 · Vite 7 · JavaScript**
 
-[Sobre](#sobre) · [Exercícios](#exercícios) · [Como executar](#como-executar) · [Estrutura](#estrutura-do-projeto)
+[Sobre](#sobre) · [Interface](#interface) · [Exercícios](#exercícios) · [Como executar](#como-executar) · [Estrutura](#estrutura-do-projeto)
 
 </div>
 
@@ -17,6 +17,14 @@ Uma aplicação de página única que conecta estado, efeitos, lógica reutiliz�
 Este projeto é um laboratório de estudos com exemplos pequenos e interativos. Cada página explora um conceito do React, permitindo observar o comportamento da aplicação enquanto você interage com ela.
 
 O menu lateral conecta os cinco exercícios sem recarregar a página. O tema é compartilhado entre as rotas, e os favoritos ficam armazenados no navegador.
+
+## Interface
+
+![Tela inicial do Laboratório React em tema claro, com menu lateral e apresentação dos cinco exercícios](docs/images/inicio.png)
+
+<p align="center"><sub>Tela inicial com navegação lateral e acesso aos cinco exercícios do laboratório.</sub></p>
+
+<p align="center"><a href="https://vitorcgo.github.io/react-hooks-lab-tsi/">Acessar o laboratório</a></p>
 
 ## Exercícios
 
