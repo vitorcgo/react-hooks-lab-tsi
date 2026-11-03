@@ -64,7 +64,7 @@ Inicie o servidor de desenvolvimento:
 npm run dev
 ```
 
-Abra o endereço informado no terminal, normalmente `http://localhost:5173`.
+Abra o endereço informado no terminal, normalmente `http://localhost:5173/react-hooks-lab-tsi/`.
 
 ## Comandos disponíveis
 
@@ -130,7 +130,7 @@ Endereços não cadastrados exibem a mensagem de página não encontrada.
 ## Tecnologias
 
 - **React e React DOM:** componentes, renderização e gerenciamento de estado.
-- **React Router:** navegação entre páginas com `BrowserRouter`, `Routes` e `NavLink`.
+- **React Router:** navegação entre páginas com `HashRouter`, `Routes` e `NavLink`.
 - **Vite:** servidor de desenvolvimento e geração do build.
 - **ESLint:** análise estática e verificação das regras de Hooks.
 - **CSS:** layout responsivo, cartões e variáveis para os temas.
@@ -138,7 +138,15 @@ Endereços não cadastrados exibem a mensagem de página não encontrada.
 
 ## Publicação
 
-O build é gerado em `dist/`. Como a aplicação utiliza `BrowserRouter`, configure a hospedagem para servir `index.html` ao acessar diretamente as rotas do laboratório.
+O workflow `.github/workflows/deploy.yml` instala as dependências, executa o lint, gera o build e publica a pasta `dist/` no GitHub Pages a cada push na branch `main`. Também é possível iniciá-lo manualmente pela aba **Actions**.
+
+No repositório, acesse **Settings > Pages > Build and deployment** e selecione **GitHub Actions** no campo **Source**.
+
+Após o primeiro deploy, o site estará disponível em:
+
+https://vitorcgo.github.io/react-hooks-lab-tsi/
+
+As rotas usam `HashRouter`, com endereços como `/#/exercicio-1`, permitindo abrir links diretos e recarregar a página no GitHub Pages. O Vite usa a base `/react-hooks-lab-tsi/` para carregar os arquivos do projeto.
 
 ## Autor
 
